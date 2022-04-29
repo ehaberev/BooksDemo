@@ -4,7 +4,7 @@
 set -e
 
 git config --global credential.github.com.interactive always
-git config user.name "N1x9d"
+git config user.name "Никита Владимирович Шаталов"
 
 git config user.email "nsh19021999@yandex.ru"
 git config --global credential.github.com.interactive auto
