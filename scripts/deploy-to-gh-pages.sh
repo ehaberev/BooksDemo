@@ -3,11 +3,9 @@
 # Exit with nonzero exit code if anything fails.
 set -e
 
-git config --global credential.github.com.interactive always
+
 git config user.name "Никита Владимирович Шаталов"  
-git config user.password: "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"
 git config user.email "nsh19021999@yandex.ru"
-git config --global credential.github.com.interactive auto
 echo "Start to deploy..."
 
 git checkout --orphan gh-pages
