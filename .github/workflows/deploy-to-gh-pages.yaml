@@ -25,4 +25,4 @@ jobs:
         run: npx ember build --environment=ci
 
       - name: Run deploy script
-        run: git update-index --chmod=+x sh ./scripts/deploy-to-gh-pages.sh
+        run: sh ./scripts/deploy-to-gh-pages.sh
