@@ -1,12 +1,24 @@
-div.cont{
-    vertical-align: bottom;
-}
+
 div.ember-view{
     height: 100%;
-   background-color: #F4F7FB;
+    //background-color: #F4F7FB;
 }
 
 div.sp{
-    width: 100%;
-    background-color: white;
+    margin-top: 20%;
+   // background-color: #F4F7FB;
+   text-align: center;
+}
+
+
+ .images{
+    
+    display:block;
+    margin:auto;
+   
+}
+.card-img-top{
+    display:block;
+    margin:auto;
+    height: 450px;
 }
