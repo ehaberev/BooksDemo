@@ -17,6 +17,7 @@
     "test": "ember test"
   },
   "devDependencies": {
+    "@ember/optional-features": "^2.0.0",
     "bootstrap": "^4.6.1",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
@@ -53,6 +54,7 @@
   },
   "dependencies": {
     "@abcum/ember-helpers": "^4.2.1",
+    "broccoli-funnel": "^3.0.8",
     "ember-cli-deploy-github-pages": "0.0.1",
     "json-server": "^0.17.0"
   }

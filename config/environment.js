@@ -4,6 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'books-demo',
     environment,
+    backEndURL: 'http://localhost:3000',
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -51,7 +52,7 @@ module.exports = function(environment) {
 
   if (environment === 'ci') {
     // here you can enable a production-specific feature
-    ENV.rootURL='/BooksDemo/';
+    ENV.rootURL='/gh-pages/';
   }
 
   return ENV;

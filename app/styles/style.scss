@@ -1,16 +1,18 @@
 
-div.ember-view{
-    height: 100%;
+div.it{
+    
     //background-color: #F4F7FB;
 }
 
 div.sp{
     margin-top: 20%;
-   // background-color: #F4F7FB;
+   //background-color: #F4F7FB;
    text-align: center;
 }
 
-
+div.card-header{
+    height: 50px;
+}
  .images{
     
     display:block;
@@ -20,5 +22,10 @@ div.sp{
 .card-img-top{
     display:block;
     margin:auto;
-    height: 450px;
+   // height: 450px;
+}
+.speacker
+{
+    display:block;
+    margin:auto;
 }

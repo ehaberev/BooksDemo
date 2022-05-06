@@ -24,10 +24,12 @@
       </div>
       <div class="row row-cols-1 row-cols-md-3 fix-margin">
        
-       {{#each model as |book|}}
-			{{books-item name = book.name author = book.Author pc = book.PCount IMGurl = book.IMGurl DiscrUrl = book.DiscrUrl tags=book.tags Rate = book.Rate }}
-		{{/each}}
+      {{#each model as |book|}}
+			  {{books-item id = book.id name = book.Name author = book.Author pc = book.PCount IMGurl = book.IMGurl DiscrUrl = book.DiscrUrl tags=book.tags Rate = book.Rate }}
+		  {{/each}}
        
       </div>
     </div>
   </div>
+
+  {{outlet}}
