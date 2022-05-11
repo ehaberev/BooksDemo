@@ -8,11 +8,18 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('speackers', {path: '/speackers'}, function(){
-    this.route('edit',{ path: '/:id'})
-  });  
-  this.route('books', {path: '/books'}, function(){
-    this.route('edit',{ path: '/:id'})
+    this.route('edit',{ path: '/:id/edit'});
+    
   });
+  this.route('books', {path: '/books'}, function(){
+    this.route('create', {path: '/create'});
+    this.route('edit',{ path: '/:id/edit'});
+    //this.route('index',  {path: '/books'})
+  });
+  
+
+  this.route('speackers-create', {path: '/speackers/create'});
+  this.route('error', { path: '/:error'});
   this.route('404', {path: '*path'});
 });
 
