@@ -4,12 +4,18 @@ import { Promise } from 'rsvp';
 import { later } from '@ember/runloop';
 
 export default Route.extend({
+    queryParams:{
+        search: {
+            refreshModel:true
+        }
+    },
     dataService: service('data'),
-    model(){
+    model({search}){
+        //console.log(searchT);
         return new Promise((resolve, reject)=>{
              later(async()=>{
                  try{
-                     let spk = await this.get("dataService").getDataSpeackers();
+                     let spk = search ? await this.get("dataService").getDataSpeackers(search): await this.get("dataService").getDataSpeackers();
                      resolve(spk);
                  }
                  catch(e){
@@ -19,5 +25,12 @@ export default Route.extend({
              },1000)
          })
           
+     },
+     actions:{
+         refresh(){
+            this.refresh();
+         }
      }
+    
+    
 });

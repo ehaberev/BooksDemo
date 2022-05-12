@@ -12,8 +12,8 @@ export default Controller.extend({
     },
     dataService: service('data'),
     actions:{
-        async createSpeacker(book){            
-            await this.get("dataService").createSpeacker(book);
+        async createSpeacker(speacker){            
+            await this.get("dataService").createSpeacker(speacker);
             this.transitionToRoute('speackers.index');
         }
        

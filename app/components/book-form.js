@@ -19,7 +19,7 @@ export default Component.extend({
         this._super(...arguments);
         
         this.setProperties({
-            idbook: this.get('book.id') ? this.get('book.id') : undefined,
+            idbook: this.get('book.id') !== undefined ? this.get('book.id') : undefined,
             Name: this.get('book.Name'),
             Author: this.get('book.Author'),
             PCount: this.get('book.PCount'),

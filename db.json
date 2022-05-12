@@ -45,18 +45,6 @@
   ],
   "books": [
     {
-      "id": 0,
-      "Name": "Билли Саммерс",
-      "Author": "Кинг С.",
-      "PCount": 544,
-      "IMGurl": "https://img-gorod.ru/28/971/2897174_detail.jpg",
-      "DiscrUrl": "discriptions/0.txt",
-      "tags": [
-        "ужасы"
-      ],
-      "Rate": "75"
-    },
-    {
       "id": 1,
       "Name": "1984",
       "Author": "Джордж Оруэлл",
@@ -93,13 +81,26 @@
         "фэнтези",
         "драма"
       ],
-      "Rate": "87"
+      "Rate": "94"
     },
     {
       "id": 4,
       "Name": "Программируем на C# 8.0.",
       "Author": "Гриффитс И.",
       "PCount": 944,
+      "IMGurl": "https://img-gorod.ru/28/648/2864833_detail.jpg",
+      "DiscrUrl": "discriptions/4.txt",
+      "tags": [
+        "программирование",
+        "c#"
+      ],
+      "Rate": "99"
+    },
+    {
+      "id": 5,
+      "Name": "Программируем на C# 8.0. классика",
+      "Author": "Гриффитс И.",
+      "PCount": 100,
       "IMGurl": "https://img-gorod.ru/28/648/2864833_detail.jpg",
       "DiscrUrl": "discriptions/4.txt",
       "tags": [

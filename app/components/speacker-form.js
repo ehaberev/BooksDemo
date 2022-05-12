@@ -17,7 +17,7 @@ export default Component.extend({
         this._super(...arguments);
         
         this.setProperties({
-            id: this.get('speacker.id') ? this.get('speacker.id') : undefined,
+            id: this.get('speacker.id') !== undefined ? this.get('speacker.id') : undefined,
             lastName: this.get('speacker.lastName'),
             firstName: this.get('speacker.firstName'),
             patronymic: this.get('speacker.patronymic')

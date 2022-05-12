@@ -3,8 +3,11 @@ import EmberObject from '@ember/object';
 export default Route.extend({
     model() {
         return EmberObject.create({
-          firstName: '',
-          lastName: ''
+          Name: '',
+          Author: '',
+          PCount: '',
+          DiscrUrl: '',
+          tags: [],
         });
     }
 });

@@ -11,7 +11,7 @@
           {{!-- {{/link-to}}  --}}
     </div>
     <div class="col-md-auto">
-      <form class="form-inline">
+      <form class="form-inline" >
         {{input type="search" class="form-control mr-2 search-long" placeholder="Найти по полям" aria-label="Найти по полям" value=search}}
             {{!-- <input class="form-control mr-2 search-long" type="search" placeholder="Найти по полям" aria-label="Найти по полям"> --}}
         <button class="btn btn-primary my-2" type="submit">Найти</button>
@@ -19,7 +19,8 @@
     </div>
     <div class="col-md-auto">
       <form class="form-inline">
-        <input class="form-control mr-2" type="search" placeholder="Поиск по тегам" aria-label="Найти по тегам">
+        {{input type="search" class="form-control mr-2" placeholder="Поиск по тегам" aria-label="Найти по тегам" value=tagsSearch}}
+       
         <button class="btn btn-primary my-2" type="submit">Поиск</button>
       </form>
     </div>
@@ -27,7 +28,7 @@
   <div class="row row-cols-1 row-cols-md-3 fix-margin">
        
     {{#each model as |book|}}
-			{{books-item id = book.id name = book.Name author = book.Author pc = book.PCount IMGurl = book.IMGurl DiscrUrl = book.DiscrUrl tags=book.tags Rate = book.Rate deleteBook = (action "deliteBook")}}
+			{{books-item id = book.id name = book.Name author = book.Author pc = book.PCount IMGurl = book.IMGurl DiscrUrl = book.DiscrUrl tags=book.tags Rate = book.Rate }}
 	  {{/each}}
        
   </div>

@@ -2,15 +2,28 @@ import Service from '@ember/service';
 import ENV from 'books-demo/config/environment';
 //
 export default Service.extend({
-    getDataSpeackers(){
-       return fetch(`${ENV.backEndURL}/speackers`).then((response)=> response.json())        
-    },
-    getDataBooks(search){
-        let quertParams='';
+    getDataSpeackers(search){
+        let queryParams='';
         if(search){
-            quertParams =`?q=${search}`;
+            queryParams =`?q=${search}`;
         }
-        return fetch(`${ENV.backEndURL}/books${quertParams}`).then((response)=> response.json())        
+        return fetch(`${ENV.backEndURL}/speackers${queryParams}`).then((response)=> response.json())        
+    },
+    getDataBooks(search, tagsSearch){
+        let queryParams='';
+        if(search && tagsSearch)
+        {
+           queryParams =`?q=${search}&tags_like=${tagsSearch}`;
+        }
+        else if(tagsSearch)
+        {
+            queryParams =`?tags_like=${search}`;
+        }
+        else if(search)
+        { queryParams =`?q=${search}`;
+            
+        }
+        return fetch(`${ENV.backEndURL}/books${queryParams}`).then((response)=> response.json())        
     },
 
     getBook(id){
@@ -37,6 +50,9 @@ export default Service.extend({
             body: JSON.stringify(book)
         });
     },
+
+
+
     getSpeacker(id){
         return fetch(`${ENV.backEndURL}/speackers/${id}`).then((response)=> response.json())    
     },
