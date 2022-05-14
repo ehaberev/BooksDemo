@@ -49,7 +49,7 @@
       "Name": "1984",
       "Author": "Джордж Оруэлл",
       "PCount": "111",
-      "IMGurl": "https://img-gorod.ru/23/975/2397510_detail.jpg",
+      "fileName": "https://img-gorod.ru/23/975/2397510_detail.jpg",
       "DiscrUrl": "discriptions/1.txt",
       "tags": [
         "классика",
@@ -61,8 +61,8 @@
       "id": 2,
       "Name": "Щегол",
       "Author": "Донна Тартт",
-      "PCount": 827,
-      "IMGurl": "https://img-gorod.ru/24/477/2447776_detail.jpg",
+      "PCount": "822",
+      "fileName": "https://img-gorod.ru/24/477/2447776_detail.jpg",
       "DiscrUrl": "discriptions/2.txt",
       "tags": [
         "детектив"
@@ -73,13 +73,12 @@
       "id": 3,
       "Name": "Атака на титанов",
       "Author": "Хадзимэ Исаяма",
-      "PCount": 384,
-      "IMGurl": "https://img-gorod.ru/25/037/2503798_detail.jpg",
+      "PCount": "1111",
+      "fileName": "https://img-gorod.ru/25/037/2503798_detail.jpg",
       "DiscrUrl": "discriptions/3.txt",
       "tags": [
         "детектив",
-        "фэнтези",
-        "драма"
+        "фэнтези"
       ],
       "Rate": "94"
     },
@@ -88,7 +87,7 @@
       "Name": "Программируем на C# 8.0.",
       "Author": "Гриффитс И.",
       "PCount": 944,
-      "IMGurl": "https://img-gorod.ru/28/648/2864833_detail.jpg",
+      "fileName": "https://img-gorod.ru/28/648/2864833_detail.jpg",
       "DiscrUrl": "discriptions/4.txt",
       "tags": [
         "программирование",
@@ -101,7 +100,7 @@
       "Name": "Программируем на C# 8.0. классика",
       "Author": "Гриффитс И.",
       "PCount": 100,
-      "IMGurl": "https://img-gorod.ru/28/648/2864833_detail.jpg",
+      "fileName": "https://img-gorod.ru/28/648/2864833_detail.jpg",
       "DiscrUrl": "discriptions/4.txt",
       "tags": [
         "программирование",

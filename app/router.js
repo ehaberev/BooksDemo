@@ -12,15 +12,17 @@ Router.map(function() {
     
   });
   this.route('books', {path: '/books'}, function(){
-    this.route('create', {path: '/create'});
+    
     this.route('edit',{ path: '/:id/edit'});
-    //this.route('index',  {path: '/books'})
+    this.route('index',  {path: '/books'})
   });
-  
+
 
   this.route('speackers-create', {path: '/speackers/create'});
+  this.route('books-create');
   this.route('error', { path: '/:error'});
   this.route('404', {path: '*path'});
+  
 });
 
 export default Router;

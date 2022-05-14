@@ -42,5 +42,10 @@ export default Route.extend({
              },1000)
          })
           
+     },
+     actions:{
+         refr(){
+             this.refresh
+         }
      }
 });

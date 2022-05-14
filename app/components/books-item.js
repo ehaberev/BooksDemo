@@ -7,7 +7,9 @@ export default Component.extend({
        async deleteBook(id){
             //console.log(this);
             await this.get('dataService').deliteBook(id);
-            this.transitionToRoute('books');
+            
+            this.send('refr');
+              
             
         }
     }
