@@ -11,20 +11,25 @@ export default Route.extend({
     },
     dataService: service('data'),
     model({search}){
-        //console.log(searchT);
-        return new Promise((resolve, reject)=>{
-             later(async()=>{
-                 try{
-                     let spk = search ? await this.get("dataService").getDataSpeackers(search): await this.get("dataService").getDataSpeackers();
-                     resolve(spk);
-                 }
-                 catch(e){
-                     reject("Conn faild")
-                 }
+        // // //console.log(searchT);
+        // // return new Promise((resolve, reject)=>{
+        // //      later(async()=>{
+        // //          try{
+        // //              let spk = search ? await this.get("dataService").getDataSpeackers(search): await this.get("dataService").getDataSpeackers();
+        // //              resolve(spk);
+        // //          }
+        // //          catch(e){
+        // //              reject("Conn faild")
+        // //          }
                  
-             },1000)
-         })
-          
+        // //      },1000)
+        //  })
+        //   let promise = this.get('store').findAll();
+        //   return promise;
+
+     //},
+    //  setupController(controller, model){
+    //     this._super(...arguments);
      },
      actions:{
          refresh(){

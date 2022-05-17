@@ -3,7 +3,7 @@ import Route from '@ember/routing/route';
 export default Route.extend({
     //dataService: service('data'),
     
-    // model(){
+    model(){
     //    return new Promise((resolve, reject)=>{
     //         later(async()=>{
     //             try{
@@ -16,6 +16,10 @@ export default Route.extend({
                 
     //         },1000)
     //     })
-         
-    // }
+       
+          let promise = this.get('store').findAll('speacker');
+          return promise;
+
+    
+    }
 });

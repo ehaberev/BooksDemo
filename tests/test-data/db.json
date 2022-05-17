@@ -2,42 +2,49 @@
   "speackers": [
     {
       "id": 0,
+      "type": "speacker",
       "lastName": "Иванов",
       "firstName": "Иван",
       "patronymic": "Иванович"
     },
     {
       "id": 1,
-      "lastName": "Наумовs",
-      "firstName": "Платонаs",
-      "patronymic": "Владиславовичs"
+      "type": "speacker",
+      "lastName": "Наумов",
+      "firstName": "Платон",
+      "patronymic": "Владиславович"
     },
     {
       "id": 2,
+      "type": "speacker",
       "lastName": "Трофимов",
       "firstName": "Лев",
       "patronymic": "Всеволодович"
     },
     {
       "id": 3,
+      "type": "speacker",
       "lastName": "Горшкова",
       "firstName": "Ясмина",
       "patronymic": "Ибрагимовна"
     },
     {
       "id": 4,
+      "type": "speacker",
       "lastName": "Киселев",
       "firstName": "Тимофей",
       "patronymic": "Вадимович"
     },
     {
       "id": 5,
+      "type": "speacker",
       "lastName": "Свешникова",
       "firstName": "Сафия",
       "patronymic": "Арсентьевна"
     },
     {
       "id": 6,
+      "type": "speacker",
       "lastName": "Соколова",
       "firstName": "Анна",
       "patronymic": "Кирилловна"
@@ -46,6 +53,7 @@
   "books": [
     {
       "id": 1,
+      "type": "book",
       "Name": "1984",
       "Author": "Джордж Оруэлл",
       "PCount": "123ww",
@@ -61,6 +69,7 @@
     },
     {
       "id": 2,
+      "type": "book",
       "Name": "Щегол",
       "Author": "Донна Тартт",
       "PCount": "822",
@@ -75,6 +84,7 @@
     },
     {
       "id": 3,
+      "type": "book",
       "Name": "Атака на титанов",
       "Author": "Хадзимэ Исаяма",
       "PCount": "1111",
@@ -88,6 +98,7 @@
     },
     {
       "id": 4,
+      "type": "book",
       "Name": "Программируем на C# 8.0.",
       "Author": "Гриффитс И.",
       "PCount": 944,
